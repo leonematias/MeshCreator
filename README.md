@@ -56,9 +56,9 @@ MeshCreator
 ##How to extend app
 The editor currently works with an XML custom format (used by TgcViewer engine).
 It shouldn't be so difficult to change that in order to support another format.
-Mesh importing is done in class: TgcViewer/TgcViewer/Utils/TgcSceneLoader/TgcSceneParser.cs
-Mesh exporting is done in class: TgcViewer/TgcViewer/Utils/TgcSceneLoader/TgcSceneExporter.cs
-If some day I have time I may be able to add support to OBJ or 3DS.
+- Mesh importing is done in class: TgcViewer/TgcViewer/Utils/TgcSceneLoader/TgcSceneParser.cs
+- Mesh exporting is done in class: TgcViewer/TgcViewer/Utils/TgcSceneLoader/TgcSceneExporter.cs
+
 
 
 
