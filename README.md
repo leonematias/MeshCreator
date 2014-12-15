@@ -1,12 +1,13 @@
 MeshCreator
 ===========
 
-3D scene editor created with C# and DirectX 9
+Simple 3D scene editor created with C# and DirectX 9
 
 ##Features
 - You can create a new 3D scene with simple tools
+- Ideal tool for a developer (without much knowleadge of 3D modelling) to assembly existing models and create a 3D scene
 - You can save your scene and use it later
-- Scenes are stored in a custom XML format (easy to read and convert to another format)
+- Scenes are stored in a custom XML format (easy to read and convert to any another format)
 - You can load your scene with TgcViewer engine: https://github.com/leonematias/TgcViewer
 - Plugins for 3Ds Max allow you to import/export scenes created with this XML format
 
@@ -58,6 +59,12 @@ The editor currently works with an XML custom format (used by TgcViewer engine).
 It shouldn't be so difficult to change that in order to support another format.
 - Mesh importing is done in class: TgcViewer/TgcViewer/Utils/TgcSceneLoader/TgcSceneParser.cs
 - Mesh exporting is done in class: TgcViewer/TgcViewer/Utils/TgcSceneLoader/TgcSceneExporter.cs
+
+##3Ds MAX plugins
+- 3Ds MAX plugins implemented in MAXScript are located in: TgcViewer/TgcViewer/Utils/MaxPlugins. 
+- You can use them to load an existing XML scene, do some modifications in 3Ds MAX and then export it again to the custom XML format. 
+- Copy all scripts to the startup script folder in 3DS MAX installation. Ex: ..\Autodesk\3ds Max XXXX\Scripts\Startup\
+- Open 3Ds MAX, go to the right panel, Utilities, MAXScript and select "TGC-Scene Exporter" or "TGC-Scene Importer".
 
 
 
